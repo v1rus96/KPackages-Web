@@ -1,0 +1,38 @@
+.cd-3d .cd-cover-layer {
+    background-color: #283040;
+  }
+
+  .cd-3d .cd-loading-bar {
+    background-color: #283040;
+  }
+  .cd-3d .cd-loading-bar::before {
+    background-color: #4089a6;
+  }
+
+  .cd-3d .cd-btn {
+    background-color: #4089a6;
+  }
+
+  main .cd-main-content.cd-3d {
+    /* .cd-main-content basic style - about page */
+    background-color: #283040;
+  }
+  main .cd-main-content.cd-3d > div {
+    padding-top: 50px;
+  }
+  main .cd-main-content.cd-3d::after {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(bottom, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to top,#283040, rgba(40, 48, 64, 0));
+  }
+  main .cd-main-content.cd-3d::before {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(top, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to bottom,#283040, rgba(40, 48, 64, 0));
+  }
+
+  .cd-3d h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+    font-size: 2.2rem;
+}

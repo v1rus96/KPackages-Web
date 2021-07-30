@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mobileslider.css">
+    <link rel="stylesheet" href="css/devices.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-carousel">
+        <div class="my-card">
+            <div class="device device-iphone-x">
+                <div class="device-frame">
+                    <div class="device-content">
+                        <img class="device-content" src="/assets/img/kidogame.gif">
+                    </div>
+                    </div>
+                <div class="device-stripe"></div>
+                <div class="device-btns"></div>
+                <div class="device-power"></div>
+              </div>
+        </div>
+        <div class="my-card">
+            <div class="device device-iphone-x">
+                <div class="device-frame">
+                    <div class="device-content">
+                        <img class="device-content" src="/assets/img/kidofootball.gif">
+                    </div>
+                    </div>
+                <div class="device-stripe"></div>
+                <div class="device-btns"></div>
+                <div class="device-power"></div>
+              </div>
+        </div>
+        <div class="my-card">
+            <div class="device device-iphone-x">
+                <div class="device-frame">
+                    <div class="device-content">
+                        <img class="device-content" src="/assets/img/minecraft.gif">
+                    </div>
+                    </div>
+                <div class="device-stripe"></div>
+                <div class="device-btns"></div>
+                <div class="device-power"></div>
+              </div>
+        </div>
+        <div class="my-card">
+            <div class="device device-iphone-x">
+                <div class="device-frame">
+                    <div class="device-content">
+                        <img class="device-content" src="/assets/img/mole.gif">
+                    </div>
+                    </div>
+                <div class="device-stripe"></div>
+                <div class="device-btns"></div>
+                <div class="device-power"></div>
+              </div>
+        </div>
+        <div class="my-card">
+            <div class="device device-iphone-x">
+                <div class="device-frame">
+                    <div class="device-content">
+                        <img class="device-content" src="/assets/img/angry.gif">
+                    </div>
+                    </div>
+                <div class="device-stripe"></div>
+                <div class="device-btns"></div>
+                <div class="device-power"></div>
+              </div>
+        </div>
+      </div>
+</div>
+<script src="/js/jquery-2.1.1.js"></script>
+<script>
+    var mock1 = '<div class="device device-iphone-x">' +
+                 '<div class="device-frame">' +
+                     '<div class="device-content">' +
+                         '<img class="device-content" src="img/main.png">' +
+                       '</div>' +
+                     '</div>' +
+                 '<div class="device-stripe"></div>' +
+                 '<div class="device-btns"></div>' +
+                 '<div class="device-power"></div>' +
+               '</div> ';
+    $num = $('.my-card').length;
+$even = $num / 2;
+$odd = ($num + 1) / 2;
+
+if ($num % 2 == 0) {
+$('.my-card:nth-child(' + $even + ')').addClass('active');
+$('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+$('.my-card:nth-child(' + $even + ')').next().addClass('next');
+} else {
+$('.my-card:nth-child(' + $odd + ')').addClass('active');
+$('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+$('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+}
+
+$('.my-card').click(function() {
+$slide = $('.active').width();
+console.log($('.active').position().left);
+
+if ($(this).hasClass('next')) {
+$('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+} else if ($(this).hasClass('prev')) {
+$('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+}
+
+$(this).removeClass('prev next');
+if($(this)) {
+ $(this).children().show();
+}
+else {
+ $(".my-card").children().fadeOut(1000);
+}
+$(this).siblings().removeClass('prev active next');
+
+$(this).addClass('active');
+$(this).children().show();
+$(this).prev().addClass('prev');
+$(this).next().addClass('next');
+});
+
+
+// Keyboard nav
+$('html body').keydown(function(e) {
+if (e.keyCode == 37) { // left
+$('.active').prev().trigger('click');
+}
+else if (e.keyCode == 39) { // right
+$('.active').next().trigger('click');
+}
+});
+
+
+</script>
+</body>
+</html>

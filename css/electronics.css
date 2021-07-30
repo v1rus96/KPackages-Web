@@ -1,0 +1,38 @@
+.cd-electronics .cd-cover-layer {
+    background-color: #283040;
+  }
+
+  .cd-electronics .cd-loading-bar {
+    background-color: #283040;
+  }
+  .cd-electronics .cd-loading-bar::before {
+    background-color: #4089a6;
+  }
+
+  .cd-electronics .cd-btn {
+    background-color: #4089a6;
+  }
+
+  main .cd-main-content.cd-electronics {
+    /* .cd-main-content basic style - about page */
+    background-color: #283040;
+  }
+  main .cd-main-content.cd-electronics > div {
+    padding-top: 50px;
+  }
+  main .cd-main-content.cd-electronics::after {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(bottom, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to top,#283040, rgba(40, 48, 64, 0));
+  }
+  main .cd-main-content.cd-electronics::before {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(top, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to bottom,#283040, rgba(40, 48, 64, 0));
+  }
+
+  .cd-electronics h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+    font-size: 2.2rem;
+}

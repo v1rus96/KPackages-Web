@@ -1,0 +1,42 @@
+.cd-python .cd-cover-layer {
+    background-color: #283040;
+  }
+
+  .cd-python .cd-loading-bar {
+    background-color: #283040;
+  }
+  .cd-python .cd-loading-bar::before {
+    background-color: #4089a6;
+  }
+
+  .cd-python .cd-btn {
+    background-color: #4089a6;
+  }
+
+  main .cd-main-content.cd-python {
+    /* .cd-main-content basic style - about page */
+    background: #2f3539 !important;
+    background: -moz-radial-gradient(circle, #2f3539 0%, #1e272e 100%) !important;
+    background: -webkit-radial-gradient(circle, #2f3539 0%, #1e272e 100%) !important;
+    background: radial-gradient(circle, #2f3539 0%, #1e272e 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539",endColorstr="#1e272e",GradientType=1) !important;
+  }
+  main .cd-main-content.cd-python > div {
+    padding-top: 50px;
+  }
+  main .cd-main-content.cd-python::after {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(bottom, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to top,#283040, rgba(40, 48, 64, 0));
+  }
+  main .cd-main-content.cd-python::before {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(top, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to bottom,#283040, rgba(40, 48, 64, 0));
+  }
+
+  .cd-python h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+    font-size: 2.2rem;
+}

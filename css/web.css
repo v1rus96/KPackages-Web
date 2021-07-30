@@ -1,0 +1,51 @@
+.cd-web .cd-cover-layer {
+    background-color: #283040;
+  }
+
+  .cd-web .cd-loading-bar {
+    background-color: #283040;
+  }
+  .cd-web .cd-loading-bar::before {
+    background-color: #4089a6;
+  }
+
+  .cd-web .cd-btn {
+    background-color: #4089a6;
+    position: absolute;
+    border-radius: 0;
+    z-index: 10;
+    bottom: -3.2%;
+    left: 0;
+  }
+
+  main .cd-main-content.cd-web {
+    /* .cd-main-content basic style - about page */
+    background-color: #283040;
+  }
+  main .cd-main-content.cd-web > div {
+    padding-top: 50px;
+  }
+  main .cd-main-content.cd-web::after {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(bottom, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to top,#283040, rgba(40, 48, 64, 0));
+  }
+  main .cd-main-content.cd-web::before {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(top, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to bottom,#283040, rgba(40, 48, 64, 0));
+  }
+
+  .cd-web h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+    font-size: 2.2rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.cd-web iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
