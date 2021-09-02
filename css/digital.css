@@ -1,0 +1,38 @@
+.cd-digital .cd-cover-layer {
+    background-color: #283040;
+  }
+
+  .cd-digital .cd-loading-bar {
+    background-color: #283040;
+  }
+  .cd-digital .cd-loading-bar::before {
+    background-color: #4089a6;
+  }
+
+  .cd-digital .cd-btn {
+    background-color: #4089a6;
+  }
+
+  main .cd-main-content.cd-digital {
+    /* .cd-main-content basic style - about page */
+    background-color: #283040;
+  }
+  main .cd-main-content.cd-digital > div {
+    padding-top: 50px;
+  }
+  main .cd-main-content.cd-digital::after {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(bottom, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to top,#283040, rgba(40, 48, 64, 0));
+  }
+  main .cd-main-content.cd-digital::before {
+    background-color: rgba(40, 48, 64, 0);
+    background-image: -webkit-linear-gradient(top, #283040, rgba(40, 48, 64, 0));
+    background-image: linear-gradient(to bottom,#283040, rgba(40, 48, 64, 0));
+  }
+
+  .cd-digital h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+    font-size: 2.2rem;
+}
