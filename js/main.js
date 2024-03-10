@@ -1,3 +1,4 @@
+
 jQuery(document).ready(function(event){
   var isAnimating = false,
     newLocation = '';
@@ -27,6 +28,7 @@ jQuery(document).ready(function(event){
       if( !isAnimating  &&  newLocation != newPage ) changePage(newPage, false);
     }
     firstLoad = true;
+    
 	});
 
 	function changePage(url, bool) {
